@@ -1,9 +1,22 @@
 // Pring styles
 @media print {
+
+  .container {
+    width: 700px;
+  }
+
+  .media {
+    margin-bottom: 0;
+  }
   .pdf-button {
     display: none;
   }
-  .media-list a {
-    color: #222;
+
+  .media-list {
+    margin-bottom: 0;
+
+    a {
+      color: #222;
+    }
   }
 }

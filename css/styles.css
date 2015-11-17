@@ -3850,12 +3850,13 @@ header {
 
 .media-list a {
   display: table-cell;
-  height: 40px;
+  padding-top: 4px;
+  height: 36px;
   width: 40px;
   background: #757575;
   text-align: center;
   font-size: 29px;
-  line-height: 40px;
+  line-height: 36px;
   color: #fff;
 }
 
@@ -3939,6 +3940,18 @@ header {
   margin-bottom: 0;
 }
 
+.about-me p {
+  text-indent: 1rem;
+}
+
+.study-list {
+  margin: 0;
+}
+
+.study-list > li > p {
+  text-indent: 0;
+}
+
 .computer-skills {
   font-size: 1.2rem;
 }
@@ -3980,8 +3993,17 @@ header {
 }
 
 @media print {
+  .container {
+    width: 700px;
+  }
+  .media {
+    margin-bottom: 0;
+  }
   .pdf-button {
     display: none;
+  }
+  .media-list {
+    margin-bottom: 0;
   }
   .media-list a {
     color: #222;

@@ -27,6 +27,21 @@
 	}
 }
 
+.about-me {
+  p {
+    text-indent: 1rem;
+  }
+}
+
+.study-list {
+  margin: 0;
+
+  > li > p {
+    text-indent: 0;
+  }
+}
+
+
 .computer-skills {
   font-size: 1.2rem;
 }
@@ -48,6 +63,10 @@
     margin-bottom: 1rem;
   }
 }
+
+
+
+
 
 .proj-header {
   @media (max-width: 628px) {
