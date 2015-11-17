@@ -15,7 +15,7 @@ $border-width:               .0714rem;
 //
 
 $body-bg:                    #fff;
-$body-color:                 #4A4A4A;
+$body-color:                 #000;
 
 
 // Links
@@ -30,11 +30,12 @@ $link-hover-decoration:      none;
 // fsregular
 $font-family-sans-serif:     fsregular, Helvetica, Arial, sans-serif;
 $font-family-serif:          'Andika', Georgia, "Times New Roman", Times, serif;
+$font-family-small-caps:     'fssc' , $font-family-sans-serif;
 $font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:           $font-family-sans-serif;
 
 
-$font-size-root:             14px;
+$font-size-root:             16px;
 
 $font-size-base:             1rem;
 $font-size-lg:               1.14rem;
@@ -51,10 +52,10 @@ $font-size-h6:               1rem;
 $line-height:                1.5;
 
 $headings-margin-bottom:     ($spacer / 2);
-$headings-font-family:       inherit;
+$headings-font-family:       $font-family-small-caps;
 $headings-font-weight:       500;
 $headings-line-height:       1.1;
-$headings-color:             inherit;
+$headings-color:             #403E3E;
 
 
 $hr-border-color:             #d2cdc9;

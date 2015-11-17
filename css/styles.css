@@ -253,7 +253,7 @@ html {
 }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -261,7 +261,7 @@ body {
   font-family: fsregular, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  color: #4A4A4A;
+  color: #000;
   background-color: #fff;
 }
 
@@ -298,10 +298,10 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: inherit;
+  font-family: "fssc", fsregular, Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #403E3E;
 }
 
 h1,
@@ -343,7 +343,7 @@ h6 {
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-top: 0.0714rem solid #d2cdc9;
+  border-top: 0.0714rem solid #6b6b6a;
 }
 
 small,
@@ -403,14 +403,10 @@ small,
   margin-left: auto;
 }
 
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.row:before, .row:after {
-  content: " ";
+.row:before,
+.row:after {
   display: table;
+  content: " ";
 }
 
 .row:after {
@@ -3768,6 +3764,14 @@ small,
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'fssc';
+  src: url("../fonts/fontin-sans/fontinsans_cyrillic_sc_46b-webfont.eot");
+  src: url("../fonts/fontin-sans/fontinsans_cyrillic_sc_46b-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontin-sans/fontinsans_cyrillic_sc_46b-webfont.woff2") format("woff2"), url("../fonts/fontin-sans/fontinsans_cyrillic_sc_46b-webfont.woff") format("woff"), url("../fonts/fontin-sans/fontinsans_cyrillic_sc_46b-webfont.ttf") format("truetype"), url("../fonts/fontin-sans/fontinsans_cyrillic_sc_46b-webfont.svg#fontin_sans_crsc") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 header {
   margin: 1.5rem 0;
 }
@@ -3778,6 +3782,7 @@ header {
 
 .logo {
   display: block;
+  font-family: "fssc", fsregular, Helvetica, Arial, sans-serif;
   line-height: 4rem;
   font-size: 2.5rem;
 }
@@ -3796,6 +3801,8 @@ header {
   display: block;
   line-height: 4rem;
   text-align: right;
+  font-size: 1.5rem;
+  color: #777;
 }
 
 @media (max-width: 768px) {
@@ -3840,7 +3847,7 @@ header {
   width: 40px;
   background: #757575;
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 30px;
   line-height: 40px;
   color: #fff;
 }
@@ -3855,10 +3862,6 @@ header {
 
 .email-ico:hover {
   background: #54769A;
-}
-
-.fa {
-  line-height: 38px;
 }
 
 .pdf-button {
@@ -3882,7 +3885,7 @@ header {
 }
 
 .resume-block {
-  margin-bottom: .5rem;
+  margin-bottom: 2rem;
 }
 
 .resume-block:before, .resume-block:after {
@@ -3894,12 +3897,30 @@ header {
   clear: both;
 }
 
-.col-sm-3 {
+.text-right {
   text-align: right;
 }
 
 .left-border {
-  border-left: 1px solid #000;
+  border-color: #000;
+  border-style: solid;
+  border-width: 0 0 0 1px;
+}
+
+@media (max-width: 768px) {
+  .left-border {
+    border-width: 1px 0 0;
+    padding: 5px 0 0;
+    margin-bottom: 20px;
+  }
+}
+
+.personal-data span,
+.computer-skills span,
+.education span,
+.languages span,
+.about-me span {
+  font-family: "fssc", fsregular, Helvetica, Arial, sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */
