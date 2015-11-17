@@ -7,16 +7,11 @@
   text-align: right;
 }
 
-.left-border {
+.bordered {
   border-color: #000;
   border-style: solid;
   border-width: 0 0 0 1px;
-
-  @media (max-width: 768px) {
-    border-width: 1px 0 0;
-    padding: 5px 0 0;
-    margin-bottom: 20px;
-  }
+	margin-bottom: 1rem;
 }
 
 .personal-data,
@@ -26,5 +21,47 @@
 .about-me {
   span {
     font-family: $font-family-small-caps;
+  }
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.computer-skills {
+  font-size: 1.2rem;
+}
+
+.skill-desc {
+  @media (max-width: 568px) {
+    margin-bottom: .2rem;
+    font-size: 1.4rem;
+    margin-left: 3%;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.skill {
+  @media (max-width: 568px) {
+    margin-left: 10%;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.proj-header {
+  @media (max-width: 628px) {
+    text-align: left;
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+}
+.proj-name {
+  font-size: 1.2rem;
+}
+
+.proj-desc {
+  @media (max-width: 628px) {
+    width: 100%;
   }
 }

@@ -1,0 +1,9 @@
+// Pring styles
+@media print {
+  .pdf-button {
+    display: none;
+  }
+  .media-list a {
+    color: #222;
+  }
+}

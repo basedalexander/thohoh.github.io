@@ -3828,8 +3828,15 @@ header {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 768px) {
+  .photo-block {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
 .photo {
-  display: block;
+  display: inline-block;
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -3847,9 +3854,16 @@ header {
   width: 40px;
   background: #757575;
   text-align: center;
-  font-size: 30px;
+  font-size: 29px;
   line-height: 40px;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .media-list {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
 }
 
 .github-ico:hover {
@@ -3865,6 +3879,7 @@ header {
 }
 
 .pdf-button {
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -3901,18 +3916,11 @@ header {
   text-align: right;
 }
 
-.left-border {
+.bordered {
   border-color: #000;
   border-style: solid;
   border-width: 0 0 0 1px;
-}
-
-@media (max-width: 768px) {
-  .left-border {
-    border-width: 1px 0 0;
-    padding: 5px 0 0;
-    margin-bottom: 20px;
-  }
+  margin-bottom: 1rem;
 }
 
 .personal-data span,
@@ -3921,6 +3929,63 @@ header {
 .languages span,
 .about-me span {
   font-family: "fssc", fsregular, Helvetica, Arial, sans-serif;
+}
+
+.personal-data p,
+.computer-skills p,
+.education p,
+.languages p,
+.about-me p {
+  margin-bottom: 0;
+}
+
+.computer-skills {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 568px) {
+  .skill-desc {
+    margin-bottom: .2rem;
+    font-size: 1.4rem;
+    margin-left: 3%;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 568px) {
+  .skill {
+    margin-left: 10%;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 628px) {
+  .proj-header {
+    text-align: left;
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+}
+
+.proj-name {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 628px) {
+  .proj-desc {
+    width: 100%;
+  }
+}
+
+@media print {
+  .pdf-button {
+    display: none;
+  }
+  .media-list a {
+    color: #222;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
