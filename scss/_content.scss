@@ -1,0 +1,13 @@
+.resume-block {
+  @include clearfix();
+  margin-bottom: .5rem;
+}
+
+.col-sm-3 {
+  text-align: right;
+}
+
+.left-border {
+  border-left: 1px solid #000;
+}
+

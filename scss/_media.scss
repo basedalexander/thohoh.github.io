@@ -1,0 +1,70 @@
+.media {
+  margin-bottom: 3rem;
+}
+
+.photo {
+  display: block;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.media-list {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  a {
+    display: table-cell;
+    height: 40px;
+    width: 40px;
+    background: #757575;
+    text-align: center;
+    // vertical-align: middle;
+    font-size: 2.4rem;
+    line-height: 40px;
+    color: #fff;
+  }
+}
+
+.github-ico {
+  &:hover {
+    background: #000;
+  }
+}
+
+.twitter-ico {
+  &:hover {
+    background: #55ACEE;
+  }
+}
+
+.email-ico {
+  &:hover {
+    background: #54769A;
+  }
+}
+
+.fa {
+  line-height: 38px;
+}
+
+// PDF button
+.pdf-button {
+  text-align: center;
+}
+
+.dl-button {
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+  color: rgba(0, 0, 0, 0.80);
+  border: none rgba(0, 0, 0, 0);
+  background-color: #E6E6E6;
+  text-decoration: none;
+  border-radius: 6px;
+
+  &:hover {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.10));
+    color: inherit;
+    text-decoration: none;
+  }
+}

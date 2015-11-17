@@ -1,0 +1,38 @@
+// header styles
+header {
+  margin: 1.5rem 0;
+}
+
+.header {
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  display: block;
+  line-height: 4rem;
+  font-size: 2.5rem;
+
+  > a {
+    color: #777;
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.resume-title {
+  display: block;
+  line-height: 4rem;
+  text-align: right;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+
+.resume-block {
+  @include clearfix();
+  margin-bottom: 3rem;
+}
