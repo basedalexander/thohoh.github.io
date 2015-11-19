@@ -3924,6 +3924,10 @@ header {
   margin-bottom: 1rem;
 }
 
+.education-period {
+  font-size: .8rem;
+}
+
 .personal-data span,
 .computer-skills span,
 .education span,
@@ -3944,8 +3948,26 @@ header {
   text-indent: 1rem;
 }
 
+@media (max-width: 568px) {
+  .about-me-header {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media (max-width: 568px) {
+  .about-me-desc {
+    border-color: #ccc;
+    border-left-width: 0;
+    border-top-width: 1px;
+    padding-top: .8rem;
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+}
+
 .study-list {
-  margin: 0;
+  margin: .3rem 0 0 0;
 }
 
 .study-list > li > p {
