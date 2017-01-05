@@ -14,18 +14,19 @@ var scss = {
     output: 'css',
     options: {
         errLogToConsole: true,
-        outputStyle: 'expanded'
+        outputStyle: 'compressed'
     }
 };
 
 gulp.task('sass', function () {
   return gulp
   .src(scss.input)
-  .pipe(sourcemaps.init())
   .pipe(sass(scss.options)).on('error', sass.logError)
-  .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest(scss.output));
 });
-gulp.task('watch', function () {
+
+gulp.task('sass-watch', function () {
   gulp.watch(scss.input, ['sass']);
 });
+
+gulp.task('default', ['sass', 'sass-watch']);

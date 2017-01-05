@@ -33,9 +33,3 @@ header {
     text-align: center;
   }
 }
-
-
-.resume-block {
-  @include clearfix();
-  margin-bottom: 3rem;
-}

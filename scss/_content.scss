@@ -1,6 +1,10 @@
 .resume-block {
   @include clearfix();
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+
+.block-header {
+  text-align: center;
 }
 
 .text-right {
@@ -39,6 +43,13 @@
   p {
     text-indent: 1rem;
   }
+}
+
+.about-me-text {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 12px;
 }
 
 .about-me-header {
